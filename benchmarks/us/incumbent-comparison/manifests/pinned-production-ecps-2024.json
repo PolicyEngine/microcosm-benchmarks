@@ -1,0 +1,21 @@
+{
+  "name": "pinned-production-ecps-2024",
+  "description": "Certified production incumbent baseline for Populace-US replacement benchmarks.",
+  "created": "2026-06-14",
+  "dataset_repository": "policyengine/policyengine-us-data",
+  "blob_sha256": "7af7026224f84cb6a91743fd8fa7ac506bad8c78e011fa58b6901894db4b4290",
+  "local_cache_path_example": "/Users/maxghenis/.cache/huggingface/hub/models--policyengine--policyengine-us-data/blobs/7af7026224f84cb6a91743fd8fa7ac506bad8c78e011fa58b6901894db4b4290",
+  "promotion_metrics": [
+    "full_loss",
+    "holdout_loss",
+    "unweighted_msre"
+  ],
+  "promotion_rule": "candidate must beat pinned incumbent on every promotion metric and pass export/support/lineage gates",
+  "forbidden_promotion_baselines": [
+    {
+      "name": "enhanced_cps_2024_hf_main.h5",
+      "sha256": "0a6b961ad363a421bde99f2c8e5d8f20370bcba45fd303050537a25bdd805b14",
+      "reason": "local development baseline; not the certified pinned production blob"
+    }
+  ]
+}
