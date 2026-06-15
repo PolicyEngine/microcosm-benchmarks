@@ -23,6 +23,7 @@ historical candidate scorecards, and audit-only scripts belong here.
 | Area | Path | Purpose |
 | --- | --- | --- |
 | US incumbent comparison | `benchmarks/us/incumbent-comparison/` | Compare candidate Populace-US artifacts with the certified production incumbent on the frozen target surface. |
+| Published scorecards | `archive/us/<build-id>/scorecard.json` + `benchmarks/us/incumbent-comparison/latest.json` | Machine-readable head-to-head results (schema + `latest.json` pointer) consumed by downstream dashboards. |
 | Historical archives | `archive/` | Small scorecards and run notes that document past candidate decisions. Large HDF5 artifacts stay in object storage or the local artifact cache. |
 
 ## Promotion Rule

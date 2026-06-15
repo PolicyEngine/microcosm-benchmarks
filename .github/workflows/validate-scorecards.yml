@@ -1,0 +1,22 @@
+name: Validate scorecards
+
+# Published scorecards are a read-only contract for downstream consumers
+# (e.g. the calibration-diagnostics dashboard). This gate runs the stdlib
+# validator on every change so a malformed or internally-inconsistent
+# scorecard or pointer cannot land on main.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Validate scorecards and pointers
+        run: python tools/validate_scorecard.py
