@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/PolicyEngine/populace-benchmarks/benchmarks/us/incumbent-comparison/scorecard.schema.json",
+  "title": "US incumbent-comparison scorecard",
+  "description": "Machine-readable result of scoring a candidate Populace-US artifact against the certified pinned production incumbent on the frozen target surface. One scorecard per benchmark run; consumers (e.g. the calibration-diagnostics dashboard) read it read-only.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "candidate_release_id",
+    "incumbent_manifest",
+    "baseline_label",
+    "candidate_label",
+    "summary"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "candidate_release_id": { "type": "string", "minLength": 1 },
+    "incumbent_manifest": { "type": "string", "minLength": 1 },
+    "period": { "type": ["integer", "null"] },
+    "metric": { "type": ["string", "null"] },
+    "baseline_label": { "type": "string" },
+    "candidate_label": { "type": "string" },
+    "protocol": { "type": ["string", "null"] },
+    "provenance": { "type": "object" },
+    "summary": {
+      "type": "object",
+      "description": "Flat head-to-head summary. The promotion metrics (full loss, holdout loss, unweighted MSRE) are required; candidate must beat the incumbent on each to be promotion-valid.",
+      "required": [
+        "candidate_loss",
+        "baseline_loss",
+        "candidate_holdout_loss",
+        "baseline_holdout_loss",
+        "candidate_unweighted_msre",
+        "baseline_unweighted_msre",
+        "candidate_wins",
+        "baseline_wins",
+        "ties",
+        "n_targets"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "candidate_loss": { "type": "number" },
+        "baseline_loss": { "type": "number" },
+        "loss_delta": { "type": ["number", "null"] },
+        "candidate_holdout_loss": { "type": "number" },
+        "baseline_holdout_loss": { "type": "number" },
+        "candidate_train_loss": { "type": ["number", "null"] },
+        "baseline_train_loss": { "type": ["number", "null"] },
+        "candidate_unweighted_msre": { "type": "number" },
+        "baseline_unweighted_msre": { "type": "number" },
+        "candidate_wins": { "type": "integer", "minimum": 0 },
+        "baseline_wins": { "type": "integer", "minimum": 0 },
+        "ties": { "type": "integer", "minimum": 0 },
+        "n_targets": { "type": "integer", "minimum": 1 },
+        "holdout_targets": { "type": ["integer", "null"] },
+        "train_targets": { "type": ["integer", "null"] },
+        "candidate_beats_baseline": { "type": ["boolean", "null"] },
+        "matched_household_count": { "type": ["integer", "null"] }
+      }
+    },
+    "family_breakdown": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["family", "n_targets"],
+        "additionalProperties": true,
+        "properties": {
+          "family": { "type": "string" },
+          "n_targets": { "type": "integer", "minimum": 0 },
+          "candidate_wins": { "type": ["integer", "null"] },
+          "baseline_wins": { "type": ["integer", "null"] },
+          "ties": { "type": ["integer", "null"] },
+          "candidate_loss_contribution": { "type": ["number", "null"] },
+          "baseline_loss_contribution": { "type": ["number", "null"] },
+          "loss_delta": { "type": ["number", "null"] }
+        }
+      }
+    },
+    "top_improvements": { "type": "array" },
+    "top_regressions": { "type": "array" },
+    "gates": { "type": "object" }
+  }
+}
