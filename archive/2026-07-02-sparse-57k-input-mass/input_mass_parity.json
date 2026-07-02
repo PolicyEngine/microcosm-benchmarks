@@ -1,0 +1,1220 @@
+{
+ "schema_version": 1,
+ "kind": "us_input_mass_parity",
+ "engine": {
+  "policyengine_us": "1.755.5"
+ },
+ "relative_tolerance": 0.5,
+ "minimum_reference_total": 1000000000.0,
+ "artifacts": {
+  "reference": {
+   "name": "populace-us-2024-f0af251-703bd81a565c-20260620",
+   "path": "/Users/maxghenis/.cache/huggingface/hub/datasets--policyengine--populace-us/snapshots/d8f5cff65f36205a613cb144fd97db3087bbd82a/populace_us_2024.h5",
+   "sha256": "16be6338f9d0b3c339883dae59949e995663b64cf145de6728b3dd0f916c5d5f"
+  },
+  "candidate": {
+   "name": "populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701",
+   "path": "/Users/maxghenis/.cache/huggingface/hub/datasets--policyengine--populace-us/snapshots/14a2fb9d3b046322cfeb2bef1a4d4d94d512589e/populace_us_2024.h5",
+   "sha256": "c2065b642ab00da74746afdfd9f06890e5f32f9b10bd6610ff236452d40f39c5"
+  },
+  "flat_incumbent": {
+   "name": "enhanced-cps-2024-local-build",
+   "path": "/Users/maxghenis/PolicyEngine/policyengine-us-data/policyengine_us_data/storage/enhanced_cps_2024.h5",
+   "sha256": "b6034d67503650445f40773501fbfe1c779be4bcd66841250e2f9c880b885ab5"
+  }
+ },
+ "gate": {
+  "passed": false,
+  "failures": [
+   "alimony_expense: populace-us-2024-f0af251-703bd81a565c-20260620 carries 6.46454e+09 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "alimony_income: populace-us-2024-f0af251-703bd81a565c-20260620 carries 2.79892e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "auto_loan_balance: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.30265e+12 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "auto_loan_interest: populace-us-2024-f0af251-703bd81a565c-20260620 carries 6.87146e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "bank_account_assets: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.30585e+13 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "bond_assets: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.22969e+12 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "casualty_loss: populace-us-2024-f0af251-703bd81a565c-20260620 carries 6.7659e+09 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "child_support_expense: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.79495e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "child_support_received: populace-us-2024-f0af251-703bd81a565c-20260620 carries 3.6089e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "detailed_occupation_recode: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.02951e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "disability_benefits: populace-us-2024-f0af251-703bd81a565c-20260620 carries 3.78709e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "domestic_production_ald: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.2326e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "educational_assistance: populace-us-2024-f0af251-703bd81a565c-20260620 carries 8.54459e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "educator_expense: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.47474e+09 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "employer_sponsored_insurance_premiums: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.12952e+12 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "estate_income: populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701 mass 9.84339e+10 vs populace-us-2024-f0af251-703bd81a565c-20260620 5.91586e+10 (+66.4%, beyond \u00b150%); carry the input through the build or add a reviewed exclusion.",
+   "farm_income: populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701 mass 6.23873e+10 vs populace-us-2024-f0af251-703bd81a565c-20260620 -8.20727e+10 (+176.0%, beyond \u00b150%); carry the input through the build or add a reviewed exclusion.",
+   "farm_operations_income: populace-us-2024-f0af251-703bd81a565c-20260620 carries -8.20727e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "farm_rent_income: populace-us-2024-f0af251-703bd81a565c-20260620 carries 2.0689e+09 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "financial_assistance: populace-us-2024-f0af251-703bd81a565c-20260620 carries 3.94552e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "first_home_mortgage_balance: populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701 mass 8.19483e+12 vs populace-us-2024-f0af251-703bd81a565c-20260620 2.39907e+13 (-65.8%, beyond \u00b150%); carry the input through the build or add a reviewed exclusion.",
+   "first_home_mortgage_origination_year: populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701 mass 5.20291e+10 vs populace-us-2024-f0af251-703bd81a565c-20260620 2.15013e+11 (-75.8%, beyond \u00b150%); carry the input through the build or add a reviewed exclusion.",
+   "fsla_overtime_premium: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.02827e+11 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "health_savings_account_ald: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.04777e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "hourly_wage: populace-us-2024-f0af251-703bd81a565c-20260620 carries 4.46019e+09 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "hours_worked_last_week: populace-us-2024-f0af251-703bd81a565c-20260620 carries 6.05651e+09 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "household_vehicles_value: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.95281e+12 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "investment_income_elected_form_4952: populace-us-2024-f0af251-703bd81a565c-20260620 carries 5.41689e+09 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "investment_interest_expense: populace-us-2024-f0af251-703bd81a565c-20260620 carries 8.89819e+09 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "long_term_capital_gains_on_collectibles: populace-us-2024-f0af251-703bd81a565c-20260620 carries 6.81445e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "miscellaneous_income: populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701 mass 4.74006e+10 vs populace-us-2024-f0af251-703bd81a565c-20260620 1.43872e+10 (+229.5%, beyond \u00b150%); carry the input through the build or add a reviewed exclusion.",
+   "net_worth: populace-us-2024-f0af251-703bd81a565c-20260620 carries 2.2336e+14 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "non_sch_d_capital_gains: populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701 mass 7.57467e+10 vs populace-us-2024-f0af251-703bd81a565c-20260620 1.14292e+10 (+562.7%, beyond \u00b150%); carry the input through the build or add a reviewed exclusion.",
+   "other_health_insurance_premiums: populace-us-2024-f0af251-703bd81a565c-20260620 carries 3.41194e+11 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "partnership_income: populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701 mass 8.47756e+11 vs populace-us-2024-f0af251-703bd81a565c-20260620 3.97119e+11 (+113.5%, beyond \u00b150%); carry the input through the build or add a reviewed exclusion.",
+   "pre_subsidy_rent: populace-us-2024-f0af251-703bd81a565c-20260620 carries 5.89998e+11 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "qualified_reit_and_ptp_income: populace-us-2024-f0af251-703bd81a565c-20260620 carries 5.51968e+09 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "qualified_tuition_expenses: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.61573e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "rental_income: populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701 mass 4.3287e+11 vs populace-us-2024-f0af251-703bd81a565c-20260620 1.9601e+11 (+120.8%, beyond \u00b150%); carry the input through the build or add a reviewed exclusion.",
+   "roth_401k_contributions_desired: populace-us-2024-f0af251-703bd81a565c-20260620 carries 5.36715e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "roth_ira_contributions_desired: populace-us-2024-f0af251-703bd81a565c-20260620 carries 2.50015e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "salt_refund_income: populace-us-2024-f0af251-703bd81a565c-20260620 carries 4.44016e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "second_home_mortgage_balance: populace-us-2024-f0af251-703bd81a565c-20260620 carries 9.02132e+11 but populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701 mass is zero (-100.0%); carry the input through the build or add a reviewed exclusion.",
+   "second_home_mortgage_interest: populace-us-2024-f0af251-703bd81a565c-20260620 carries 3.94632e+09 but populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701 mass is zero (-100.0%); carry the input through the build or add a reviewed exclusion.",
+   "second_home_mortgage_origination_year: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.71928e+10 but populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701 mass is zero (-100.0%); carry the input through the build or add a reviewed exclusion.",
+   "self_employed_pension_contributions_desired: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.00761e+09 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "self_employment_income_last_year: populace-us-2024-f0af251-703bd81a565c-20260620 carries 2.22674e+11 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "short_term_capital_gains: populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701 mass 1.18072e+11 vs populace-us-2024-f0af251-703bd81a565c-20260620 -7.38298e+09 (+1699.3%, beyond \u00b150%); carry the input through the build or add a reviewed exclusion.",
+   "social_security_survivors: populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701 mass 1.60985e+11 vs populace-us-2024-f0af251-703bd81a565c-20260620 1.06603e+11 (+51.0%, beyond \u00b150%); carry the input through the build or add a reviewed exclusion.",
+   "spm_unit_energy_subsidy: populace-us-2024-f0af251-703bd81a565c-20260620 carries 4.04878e+09 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "spm_unit_pre_subsidy_childcare_expenses: populace-us-2024-f0af251-703bd81a565c-20260620 carries 7.47115e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "sstb_self_employment_income_before_lsr: populace-us-2024-f0af251-703bd81a565c-20260620 carries 2.06332e+11 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "sstb_unadjusted_basis_qualified_property: populace-us-2024-f0af251-703bd81a565c-20260620 carries 2.46039e+11 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "sstb_w2_wages_from_qualified_business: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.9147e+11 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "stock_assets: populace-us-2024-f0af251-703bd81a565c-20260620 carries 2.97142e+13 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "survivor_benefits: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.11661e+11 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "tax_exempt_ira_distributions: populace-us-2024-f0af251-703bd81a565c-20260620 carries 2.73593e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "tax_exempt_private_pension_income: populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701 mass 2.23258e+11 vs populace-us-2024-f0af251-703bd81a565c-20260620 8.37715e+11 (-73.3%, beyond \u00b150%); carry the input through the build or add a reviewed exclusion.",
+   "taxable_401k_distributions: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.24321e+11 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "taxable_403b_distributions: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.60164e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "taxable_sep_distributions: populace-us-2024-f0af251-703bd81a565c-20260620 carries 6.33801e+09 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "tip_income: populace-us-2024-f0af251-703bd81a565c-20260620 carries 5.90758e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "traditional_401k_contributions_desired: populace-us-2024-f0af251-703bd81a565c-20260620 carries 3.04138e+11 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "traditional_ira_contributions_desired: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.61194e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "treasury_tipped_occupation_code: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.04895e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "unadjusted_basis_qualified_property: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.89103e+12 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "unrecaptured_section_1250_gain: populace-us-2024-f0af251-703bd81a565c-20260620 carries 6.08515e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "unreimbursed_business_employee_expenses: populace-us-2024-f0af251-703bd81a565c-20260620 carries 2.18287e+11 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "veterans_benefits: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.77433e+11 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "w2_wages_from_qualified_business: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.40376e+11 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "weekly_hours_worked_before_lsr: populace-us-2024-f0af251-703bd81a565c-20260620 carries 1.35144e+10 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion.",
+   "workers_compensation: populace-us-2024-f0af251-703bd81a565c-20260620 carries 7.81908e+09 but the column is absent from populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701; carry the input through the build or add a reviewed exclusion."
+  ],
+  "details": {
+   "candidate_name": "populace-us-2024-sparse-l0-refit-57k-71a0887-national-only-20260701",
+   "reference_name": "populace-us-2024-f0af251-703bd81a565c-20260620",
+   "relative_tolerance": 0.5,
+   "minimum_reference_total": 1000000000.0,
+   "columns_checked": 97,
+   "columns_below_reference_floor": 66,
+   "candidate_only_columns": [
+    "partnership_self_employment_net_earnings"
+   ],
+   "worst_drifts": {
+    "short_term_capital_gains": 16.992517538135637,
+    "non_sch_d_capital_gains": 5.627488145489769,
+    "miscellaneous_income": 2.294632328913763,
+    "farm_income": 1.7601459731038787,
+    "rental_income": 1.2084037815676012,
+    "partnership_income": 1.134763117141136,
+    "alimony_expense": -1.0,
+    "alimony_income": -1.0,
+    "auto_loan_balance": -1.0,
+    "auto_loan_interest": -1.0,
+    "bank_account_assets": -1.0,
+    "bond_assets": -1.0,
+    "casualty_loss": -1.0,
+    "child_support_expense": -1.0,
+    "child_support_received": -1.0,
+    "detailed_occupation_recode": -1.0,
+    "disability_benefits": -1.0,
+    "domestic_production_ald": -1.0,
+    "educational_assistance": -1.0,
+    "educator_expense": -1.0
+   },
+   "reviewed_exclusions": {},
+   "unused_reviewed_exclusions": []
+  }
+ },
+ "totals": [
+  {
+   "variable": "age",
+   "reference_total": 13371596712.743496,
+   "candidate_total": 13475202617.529121,
+   "flat_incumbent_total": 13299066943.36485
+  },
+  {
+   "variable": "alimony_expense",
+   "reference_total": 6464535391.256821,
+   "candidate_total": null,
+   "flat_incumbent_total": 12637392009.947643
+  },
+  {
+   "variable": "alimony_income",
+   "reference_total": 27989226492.345535,
+   "candidate_total": null,
+   "flat_incumbent_total": 12844193898.972395
+  },
+  {
+   "variable": "amt_foreign_tax_credit",
+   "reference_total": null,
+   "candidate_total": null,
+   "flat_incumbent_total": 43097023027.293945
+  },
+  {
+   "variable": "attends_eligible_educational_institution_for_american_opportunity_credit",
+   "reference_total": 5736609.151420596,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "auto_loan_balance",
+   "reference_total": 1302649946585.1787,
+   "candidate_total": null,
+   "flat_incumbent_total": 1240672204032.2515
+  },
+  {
+   "variable": "auto_loan_interest",
+   "reference_total": 68714609773.78525,
+   "candidate_total": null,
+   "flat_incumbent_total": 79961046151.27713
+  },
+  {
+   "variable": "bank_account_assets",
+   "reference_total": 13058461171048.754,
+   "candidate_total": null,
+   "flat_incumbent_total": 4657259173653.991
+  },
+  {
+   "variable": "bond_assets",
+   "reference_total": 1229694052377.5771,
+   "candidate_total": null,
+   "flat_incumbent_total": 924960923334.7161
+  },
+  {
+   "variable": "business_is_sstb",
+   "reference_total": 5155407.567208955,
+   "candidate_total": null,
+   "flat_incumbent_total": 8973616.839366803
+  },
+  {
+   "variable": "casualty_loss",
+   "reference_total": 6765903069.743925,
+   "candidate_total": null,
+   "flat_incumbent_total": 761221.9973257666
+  },
+  {
+   "variable": "charitable_cash_donations",
+   "reference_total": 300791187772.5945,
+   "candidate_total": 230649102324.69092,
+   "flat_incumbent_total": 190616876524.14203
+  },
+  {
+   "variable": "charitable_non_cash_donations",
+   "reference_total": 70167198956.17633,
+   "candidate_total": 52839891581.855576,
+   "flat_incumbent_total": 152613362659.6337
+  },
+  {
+   "variable": "child_support_expense",
+   "reference_total": 17949547648.27775,
+   "candidate_total": null,
+   "flat_incumbent_total": 32476594321.36779
+  },
+  {
+   "variable": "child_support_received",
+   "reference_total": 36089004319.17106,
+   "candidate_total": null,
+   "flat_incumbent_total": 33051261920.72679
+  },
+  {
+   "variable": "congressional_district_geoid",
+   "reference_total": 438906237044.4794,
+   "candidate_total": 367940975885.6575,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "county_fips",
+   "reference_total": null,
+   "candidate_total": null,
+   "flat_incumbent_total": 4114188100.11912
+  },
+  {
+   "variable": "cps_race",
+   "reference_total": 527605222.76656526,
+   "candidate_total": null,
+   "flat_incumbent_total": 534468778.06037176
+  },
+  {
+   "variable": "detailed_occupation_recode",
+   "reference_total": 10295086686.778622,
+   "candidate_total": null,
+   "flat_incumbent_total": 10482830189.300037
+  },
+  {
+   "variable": "disability_benefits",
+   "reference_total": 37870919356.970505,
+   "candidate_total": null,
+   "flat_incumbent_total": 42814859170.066345
+  },
+  {
+   "variable": "domestic_production_ald",
+   "reference_total": 12326025818.317448,
+   "candidate_total": null,
+   "flat_incumbent_total": 35812344044.08161
+  },
+  {
+   "variable": "early_withdrawal_penalty",
+   "reference_total": null,
+   "candidate_total": null,
+   "flat_incumbent_total": 4487349156.215172
+  },
+  {
+   "variable": "educational_assistance",
+   "reference_total": 85445917227.51689,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "educator_expense",
+   "reference_total": 1474739933.4658144,
+   "candidate_total": null,
+   "flat_incumbent_total": 517583251.9945996
+  },
+  {
+   "variable": "employer_sponsored_insurance_premiums",
+   "reference_total": 1129521581562.8354,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "employment_income_before_lsr",
+   "reference_total": 9709010503447.781,
+   "candidate_total": 9711123415479.793,
+   "flat_incumbent_total": 10357029966384.457
+  },
+  {
+   "variable": "estate_income",
+   "reference_total": 59158589418.12161,
+   "candidate_total": 98433854459.14828,
+   "flat_incumbent_total": 62177865688.26314
+  },
+  {
+   "variable": "estate_income_would_be_qualified",
+   "reference_total": 337861201.0194732,
+   "candidate_total": null,
+   "flat_incumbent_total": 334847817.1488899
+  },
+  {
+   "variable": "excess_withheld_payroll_tax",
+   "reference_total": null,
+   "candidate_total": null,
+   "flat_incumbent_total": 4921815511.564131
+  },
+  {
+   "variable": "farm_income",
+   "reference_total": -82072740341.3531,
+   "candidate_total": 62387263072.07981,
+   "flat_incumbent_total": 22543960586.73196
+  },
+  {
+   "variable": "farm_operations_income",
+   "reference_total": -82072740341.3531,
+   "candidate_total": null,
+   "flat_incumbent_total": -69470736045.9686
+  },
+  {
+   "variable": "farm_operations_income_would_be_qualified",
+   "reference_total": 337861201.0194732,
+   "candidate_total": null,
+   "flat_incumbent_total": 334847817.1488899
+  },
+  {
+   "variable": "farm_rent_income",
+   "reference_total": 2068901344.860734,
+   "candidate_total": null,
+   "flat_incumbent_total": 5944561007.969234
+  },
+  {
+   "variable": "farm_rent_income_would_be_qualified",
+   "reference_total": 337861201.0194732,
+   "candidate_total": null,
+   "flat_incumbent_total": 334847817.1488899
+  },
+  {
+   "variable": "financial_assistance",
+   "reference_total": 39455154787.24355,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "first_home_mortgage_balance",
+   "reference_total": 23990684867827.574,
+   "candidate_total": 8194827673050.786,
+   "flat_incumbent_total": 2493270971178.7344
+  },
+  {
+   "variable": "first_home_mortgage_interest",
+   "reference_total": 243954716033.69,
+   "candidate_total": 310838530841.51556,
+   "flat_incumbent_total": 691191075540.8152
+  },
+  {
+   "variable": "first_home_mortgage_origination_year",
+   "reference_total": 215012707342.51178,
+   "candidate_total": 52029107996.94324,
+   "flat_incumbent_total": 28176948059.547173
+  },
+  {
+   "variable": "fsla_overtime_premium",
+   "reference_total": 102826805148.38689,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "general_business_credit",
+   "reference_total": null,
+   "candidate_total": null,
+   "flat_incumbent_total": 14186192272.40182
+  },
+  {
+   "variable": "has_american_opportunity_credit_1098_t_or_exception",
+   "reference_total": 5736609.151420596,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "has_american_opportunity_credit_institution_ein",
+   "reference_total": 5736609.151420596,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "has_champva_health_coverage_at_interview",
+   "reference_total": 978084.1383053112,
+   "candidate_total": 346722.1181254178,
+   "flat_incumbent_total": 1646693.6879894957
+  },
+  {
+   "variable": "has_esi",
+   "reference_total": 197688900.87600356,
+   "candidate_total": 153177555.40981805,
+   "flat_incumbent_total": 175759481.9816767
+  },
+  {
+   "variable": "has_indian_health_service_coverage_at_interview",
+   "reference_total": 817524.6972639286,
+   "candidate_total": 351882.80171806295,
+   "flat_incumbent_total": 1095128.1304664612
+  },
+  {
+   "variable": "has_marketplace_health_coverage",
+   "reference_total": 20774498.19125319,
+   "candidate_total": 21453388.647492066,
+   "flat_incumbent_total": 13715584.006197063
+  },
+  {
+   "variable": "has_marketplace_health_coverage_at_interview",
+   "reference_total": 20774498.19125319,
+   "candidate_total": 21453388.647492066,
+   "flat_incumbent_total": 13715584.006197063
+  },
+  {
+   "variable": "has_medicaid_health_coverage_at_interview",
+   "reference_total": 46859753.04681451,
+   "candidate_total": 25000771.843905162,
+   "flat_incumbent_total": 58153310.04187067
+  },
+  {
+   "variable": "has_never_worked",
+   "reference_total": 97800195.78452176,
+   "candidate_total": null,
+   "flat_incumbent_total": 94587377.47719353
+  },
+  {
+   "variable": "has_non_marketplace_direct_purchase_health_coverage_at_interview",
+   "reference_total": 14906906.23057543,
+   "candidate_total": 8008361.949543854,
+   "flat_incumbent_total": 20336790.064717747
+  },
+  {
+   "variable": "has_other_means_tested_health_coverage_at_interview",
+   "reference_total": 357076.1360962209,
+   "candidate_total": 168171.06720054412,
+   "flat_incumbent_total": 502425.69341209903
+  },
+  {
+   "variable": "has_tricare_health_coverage_at_interview",
+   "reference_total": 6925498.648111824,
+   "candidate_total": 4174409.155915307,
+   "flat_incumbent_total": 6036688.028213803
+  },
+  {
+   "variable": "has_va_health_coverage_at_interview",
+   "reference_total": 3278334.536197924,
+   "candidate_total": 963883.9261570695,
+   "flat_incumbent_total": 3639779.186135549
+  },
+  {
+   "variable": "health_insurance_premiums_without_medicare_part_b",
+   "reference_total": 373702799706.30334,
+   "candidate_total": 339574637490.24146,
+   "flat_incumbent_total": 373770428994.62286
+  },
+  {
+   "variable": "health_savings_account_ald",
+   "reference_total": 10477687222.817608,
+   "candidate_total": null,
+   "flat_incumbent_total": 2417295419.41656
+  },
+  {
+   "variable": "home_mortgage_interest",
+   "reference_total": 247901039924.09882,
+   "candidate_total": 311125537389.7597,
+   "flat_incumbent_total": 691191076195.2443
+  },
+  {
+   "variable": "hourly_wage",
+   "reference_total": 4460185375.86997,
+   "candidate_total": null,
+   "flat_incumbent_total": 4933817987.203335
+  },
+  {
+   "variable": "hours_worked_last_week",
+   "reference_total": 6056509256.599197,
+   "candidate_total": null,
+   "flat_incumbent_total": 5723733406.266247
+  },
+  {
+   "variable": "household_vehicles_owned",
+   "reference_total": 142483820.37914157,
+   "candidate_total": null,
+   "flat_incumbent_total": 206872741.25306183
+  },
+  {
+   "variable": "household_vehicles_value",
+   "reference_total": 1952814728858.8394,
+   "candidate_total": null,
+   "flat_incumbent_total": 3789826617438.6826
+  },
+  {
+   "variable": "investment_income_elected_form_4952",
+   "reference_total": 5416886982.428919,
+   "candidate_total": null,
+   "flat_incumbent_total": 754982344.7766881
+  },
+  {
+   "variable": "investment_interest_expense",
+   "reference_total": 8898189844.029613,
+   "candidate_total": null,
+   "flat_incumbent_total": 43674371269.66913
+  },
+  {
+   "variable": "is_blind",
+   "reference_total": 10592216.35770969,
+   "candidate_total": null,
+   "flat_incumbent_total": 5965149.983841645
+  },
+  {
+   "variable": "is_computer_scientist",
+   "reference_total": 5997600.935506046,
+   "candidate_total": null,
+   "flat_incumbent_total": 4699178.195997408
+  },
+  {
+   "variable": "is_disabled",
+   "reference_total": 42511142.788151085,
+   "candidate_total": null,
+   "flat_incumbent_total": 39611229.31498036
+  },
+  {
+   "variable": "is_enrolled_at_least_half_time_for_american_opportunity_credit",
+   "reference_total": 5736609.151420596,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "is_executive_administrative_professional",
+   "reference_total": 92486904.69427073,
+   "candidate_total": null,
+   "flat_incumbent_total": 88635762.52383783
+  },
+  {
+   "variable": "is_farmer_fisher",
+   "reference_total": 873656.8858300698,
+   "candidate_total": null,
+   "flat_incumbent_total": 1187199.6268178597
+  },
+  {
+   "variable": "is_female",
+   "reference_total": 176847707.82474262,
+   "candidate_total": 172680697.8700405,
+   "flat_incumbent_total": 170843690.69683182
+  },
+  {
+   "variable": "is_full_time_college_student",
+   "reference_total": 12734525.061861381,
+   "candidate_total": null,
+   "flat_incumbent_total": 16849459.625481583
+  },
+  {
+   "variable": "is_hispanic",
+   "reference_total": 73870254.37052034,
+   "candidate_total": null,
+   "flat_incumbent_total": 66055625.67612429
+  },
+  {
+   "variable": "is_household_head",
+   "reference_total": 144286765.75913048,
+   "candidate_total": null,
+   "flat_incumbent_total": 153768757.54569268
+  },
+  {
+   "variable": "is_military",
+   "reference_total": 674314.955024601,
+   "candidate_total": null,
+   "flat_incumbent_total": 279131.1165899113
+  },
+  {
+   "variable": "is_paid_hourly",
+   "reference_total": 65969025.694545835,
+   "candidate_total": null,
+   "flat_incumbent_total": 88434881.47917584
+  },
+  {
+   "variable": "is_pregnant",
+   "reference_total": 3669677.4349363954,
+   "candidate_total": null,
+   "flat_incumbent_total": 3137850.7785670795
+  },
+  {
+   "variable": "is_pursuing_credential_for_american_opportunity_credit",
+   "reference_total": 5736609.151420596,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "is_related_to_head_or_spouse",
+   "reference_total": 337526844.7169655,
+   "candidate_total": 338924570.3716366,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "is_separated",
+   "reference_total": 8165797.615994288,
+   "candidate_total": null,
+   "flat_incumbent_total": 7274879.224954836
+  },
+  {
+   "variable": "is_surviving_spouse",
+   "reference_total": 12935111.840248438,
+   "candidate_total": null,
+   "flat_incumbent_total": 22123443.65778794
+  },
+  {
+   "variable": "is_union_member_or_covered",
+   "reference_total": 13113929.871820215,
+   "candidate_total": null,
+   "flat_incumbent_total": 13902565.385060972
+  },
+  {
+   "variable": "is_unmarried_partner_of_household_head",
+   "reference_total": 6913617.629624328,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "is_wic_at_nutritional_risk",
+   "reference_total": 337861201.0194732,
+   "candidate_total": null,
+   "flat_incumbent_total": 334847817.1488899
+  },
+  {
+   "variable": "keogh_distributions",
+   "reference_total": 1356990.9546839814,
+   "candidate_total": null,
+   "flat_incumbent_total": 0.0
+  },
+  {
+   "variable": "long_term_capital_gains_before_response",
+   "reference_total": 1091113945402.5835,
+   "candidate_total": 864397848733.3463,
+   "flat_incumbent_total": 1226354854362.332
+  },
+  {
+   "variable": "long_term_capital_gains_on_collectibles",
+   "reference_total": 68144490128.117615,
+   "candidate_total": null,
+   "flat_incumbent_total": 5634175450.300307
+  },
+  {
+   "variable": "miscellaneous_income",
+   "reference_total": 14387214323.653208,
+   "candidate_total": 47400581433.71902,
+   "flat_incumbent_total": 105473532472.64961
+  },
+  {
+   "variable": "net_worth",
+   "reference_total": 223359574553964.2,
+   "candidate_total": null,
+   "flat_incumbent_total": 165809244794117.0
+  },
+  {
+   "variable": "non_qualified_dividend_income",
+   "reference_total": 102151162880.49887,
+   "candidate_total": 101263906762.77205,
+   "flat_incumbent_total": 147739736988.91785
+  },
+  {
+   "variable": "non_sch_d_capital_gains",
+   "reference_total": 11429170278.497799,
+   "candidate_total": 75746690533.52817,
+   "flat_incumbent_total": 13170201072.197147
+  },
+  {
+   "variable": "other_credits",
+   "reference_total": null,
+   "candidate_total": null,
+   "flat_incumbent_total": 154397908.08129454
+  },
+  {
+   "variable": "other_health_insurance_premiums",
+   "reference_total": 341193754688.9627,
+   "candidate_total": null,
+   "flat_incumbent_total": 312326500371.7031
+  },
+  {
+   "variable": "other_medical_expenses",
+   "reference_total": 287387229386.98444,
+   "candidate_total": 283549166488.85767,
+   "flat_incumbent_total": 274226243036.5694
+  },
+  {
+   "variable": "over_the_counter_health_expenses",
+   "reference_total": 68654858863.63701,
+   "candidate_total": 63769097363.62388,
+   "flat_incumbent_total": 70555493885.66428
+  },
+  {
+   "variable": "own_children_in_household",
+   "reference_total": 175422000.07745245,
+   "candidate_total": null,
+   "flat_incumbent_total": 155811592.53455114
+  },
+  {
+   "variable": "partnership_income",
+   "reference_total": 397119261759.12744,
+   "candidate_total": 847755553109.7017,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "partnership_s_corp_income_would_be_qualified",
+   "reference_total": 337861201.0194732,
+   "candidate_total": null,
+   "flat_incumbent_total": 334847817.1488899
+  },
+  {
+   "variable": "partnership_self_employment_net_earnings",
+   "reference_total": null,
+   "candidate_total": 61739193772.96442,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "pre_subsidy_rent",
+   "reference_total": 589997512683.5051,
+   "candidate_total": null,
+   "flat_incumbent_total": 786975059807.5103
+  },
+  {
+   "variable": "previous_year_income_available",
+   "reference_total": 113672128.95686093,
+   "candidate_total": null,
+   "flat_incumbent_total": 74127936.80500564
+  },
+  {
+   "variable": "prior_year_minimum_tax_credit",
+   "reference_total": null,
+   "candidate_total": null,
+   "flat_incumbent_total": 20114487047.776237
+  },
+  {
+   "variable": "qualified_bdc_income",
+   "reference_total": 146320051.7529749,
+   "candidate_total": null,
+   "flat_incumbent_total": 1924103342.5535138
+  },
+  {
+   "variable": "qualified_dividend_income",
+   "reference_total": 309373019466.73413,
+   "candidate_total": 296201244950.3255,
+   "flat_incumbent_total": 351686068653.6097
+  },
+  {
+   "variable": "qualified_reit_and_ptp_income",
+   "reference_total": 5519682980.547566,
+   "candidate_total": null,
+   "flat_incumbent_total": 20278809881.564346
+  },
+  {
+   "variable": "qualified_tuition_expenses",
+   "reference_total": 16157300868.086102,
+   "candidate_total": null,
+   "flat_incumbent_total": 868123916.3336575
+  },
+  {
+   "variable": "real_estate_taxes",
+   "reference_total": 261246097712.65283,
+   "candidate_total": 201096446499.06183,
+   "flat_incumbent_total": 486580748377.2772
+  },
+  {
+   "variable": "recapture_of_investment_credit",
+   "reference_total": null,
+   "candidate_total": null,
+   "flat_incumbent_total": 288353.00493726134
+  },
+  {
+   "variable": "receives_housing_assistance",
+   "reference_total": 5954582.013393847,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "receives_wic",
+   "reference_total": 2858501.1404023115,
+   "candidate_total": null,
+   "flat_incumbent_total": 0.0
+  },
+  {
+   "variable": "rental_income",
+   "reference_total": 196010336076.7815,
+   "candidate_total": 432869967418.30066,
+   "flat_incumbent_total": 301623319424.76984
+  },
+  {
+   "variable": "rental_income_would_be_qualified",
+   "reference_total": 337861201.0194732,
+   "candidate_total": null,
+   "flat_incumbent_total": 334847817.1488899
+  },
+  {
+   "variable": "roth_401k_contributions_desired",
+   "reference_total": 53671466775.35641,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "roth_ira_contributions_desired",
+   "reference_total": 25001499184.991707,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "s_corp_income",
+   "reference_total": 0.0,
+   "candidate_total": 0.0,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "salt_refund_income",
+   "reference_total": 44401621807.34925,
+   "candidate_total": null,
+   "flat_incumbent_total": 48051591727.77418
+  },
+  {
+   "variable": "second_home_mortgage_balance",
+   "reference_total": 902131905799.4612,
+   "candidate_total": 0.0,
+   "flat_incumbent_total": 0.0
+  },
+  {
+   "variable": "second_home_mortgage_interest",
+   "reference_total": 3946323909.560779,
+   "candidate_total": 0.0,
+   "flat_incumbent_total": 0.0
+  },
+  {
+   "variable": "second_home_mortgage_origination_year",
+   "reference_total": 17192808238.907272,
+   "candidate_total": 0.0,
+   "flat_incumbent_total": 0.0
+  },
+  {
+   "variable": "selected_marketplace_plan_benchmark_ratio",
+   "reference_total": 174389666.46451885,
+   "candidate_total": 158538597.8329444,
+   "flat_incumbent_total": 186862486.46664488
+  },
+  {
+   "variable": "self_employed_pension_contributions_desired",
+   "reference_total": 1007605312.4022523,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "self_employment_income_before_lsr",
+   "reference_total": 389212785582.8436,
+   "candidate_total": 419593514529.9695,
+   "flat_incumbent_total": 280784706769.94366
+  },
+  {
+   "variable": "self_employment_income_last_year",
+   "reference_total": 222674446629.45328,
+   "candidate_total": null,
+   "flat_incumbent_total": 126436257426.70903
+  },
+  {
+   "variable": "self_employment_income_would_be_qualified",
+   "reference_total": 337861201.0194732,
+   "candidate_total": null,
+   "flat_incumbent_total": 286997107.08752096
+  },
+  {
+   "variable": "short_term_capital_gains",
+   "reference_total": -7382976512.313097,
+   "candidate_total": 118072381356.81067,
+   "flat_incumbent_total": -184726914743.97754
+  },
+  {
+   "variable": "social_security_dependents",
+   "reference_total": 49651919491.97925,
+   "candidate_total": 51076083221.2002,
+   "flat_incumbent_total": 94881590727.1247
+  },
+  {
+   "variable": "social_security_disability",
+   "reference_total": 145802302947.51898,
+   "candidate_total": 147144472075.96454,
+   "flat_incumbent_total": 217982714626.79425
+  },
+  {
+   "variable": "social_security_retirement",
+   "reference_total": 1104815759777.2456,
+   "candidate_total": 1111730247762.29,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "social_security_survivors",
+   "reference_total": 106602783101.37221,
+   "candidate_total": 160985154974.162,
+   "flat_incumbent_total": 211497428917.48755
+  },
+  {
+   "variable": "spm_unit_energy_subsidy",
+   "reference_total": 4048778066.9815354,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "spm_unit_net_income_reported",
+   "reference_total": null,
+   "candidate_total": null,
+   "flat_incumbent_total": 10942094295914.842
+  },
+  {
+   "variable": "spm_unit_pre_subsidy_childcare_expenses",
+   "reference_total": 74711548340.2464,
+   "candidate_total": null,
+   "flat_incumbent_total": 182450781147.17368
+  },
+  {
+   "variable": "spm_unit_total_income_reported",
+   "reference_total": null,
+   "candidate_total": null,
+   "flat_incumbent_total": 14780362760613.098
+  },
+  {
+   "variable": "ssi_reported",
+   "reference_total": null,
+   "candidate_total": null,
+   "flat_incumbent_total": 45053008489.897354
+  },
+  {
+   "variable": "sstb_self_employment_income_before_lsr",
+   "reference_total": 206332093704.00964,
+   "candidate_total": null,
+   "flat_incumbent_total": 1826490007.6279564
+  },
+  {
+   "variable": "sstb_self_employment_income_would_be_qualified",
+   "reference_total": 5155403.728349728,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "sstb_unadjusted_basis_qualified_property",
+   "reference_total": 246038741211.55533,
+   "candidate_total": null,
+   "flat_incumbent_total": 11931164891.017492
+  },
+  {
+   "variable": "sstb_w2_wages_from_qualified_business",
+   "reference_total": 191469581891.40417,
+   "candidate_total": null,
+   "flat_incumbent_total": 183529945273.41962
+  },
+  {
+   "variable": "state_fips",
+   "reference_total": 4373740793.905056,
+   "candidate_total": 3665939448.1322155,
+   "flat_incumbent_total": 4248652393.1911607
+  },
+  {
+   "variable": "stock_assets",
+   "reference_total": 29714169227935.457,
+   "candidate_total": null,
+   "flat_incumbent_total": 6897109329671.12
+  },
+  {
+   "variable": "strike_benefits",
+   "reference_total": null,
+   "candidate_total": null,
+   "flat_incumbent_total": 0.0
+  },
+  {
+   "variable": "student_loan_interest",
+   "reference_total": 19434238947.572754,
+   "candidate_total": 10427856084.070847,
+   "flat_incumbent_total": 5807902517.196784
+  },
+  {
+   "variable": "survivor_benefits",
+   "reference_total": 111660929958.90353,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "takes_up_aca_if_eligible",
+   "reference_total": 8385445.408201155,
+   "candidate_total": 7842989.812648356,
+   "flat_incumbent_total": 129170998.6153374
+  },
+  {
+   "variable": "takes_up_dc_ptc",
+   "reference_total": 176535793.81414092,
+   "candidate_total": null,
+   "flat_incumbent_total": 58519400.072033614
+  },
+  {
+   "variable": "takes_up_early_head_start_if_eligible",
+   "reference_total": 337861201.0194732,
+   "candidate_total": null,
+   "flat_incumbent_total": 26744330.308095805
+  },
+  {
+   "variable": "takes_up_eitc",
+   "reference_total": 176535793.81414092,
+   "candidate_total": null,
+   "flat_incumbent_total": 136324861.11616457
+  },
+  {
+   "variable": "takes_up_head_start_if_eligible",
+   "reference_total": 337861201.0194732,
+   "candidate_total": null,
+   "flat_incumbent_total": 101913599.81181598
+  },
+  {
+   "variable": "takes_up_housing_assistance_if_eligible",
+   "reference_total": 47954172.26578866,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "takes_up_medicaid_if_eligible",
+   "reference_total": 337861201.0194732,
+   "candidate_total": null,
+   "flat_incumbent_total": 276221925.995803
+  },
+  {
+   "variable": "takes_up_medicare_if_eligible",
+   "reference_total": 337861201.0194732,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "takes_up_snap_if_eligible",
+   "reference_total": 158834913.23625028,
+   "candidate_total": null,
+   "flat_incumbent_total": 132347408.68370147
+  },
+  {
+   "variable": "takes_up_ssi_if_eligible",
+   "reference_total": 337861201.0194732,
+   "candidate_total": null,
+   "flat_incumbent_total": 165805969.987953
+  },
+  {
+   "variable": "takes_up_tanf_if_eligible",
+   "reference_total": 158834913.23625028,
+   "candidate_total": null,
+   "flat_incumbent_total": 36790620.646147534
+  },
+  {
+   "variable": "tax_exempt_401k_distributions",
+   "reference_total": null,
+   "candidate_total": null,
+   "flat_incumbent_total": 0.0
+  },
+  {
+   "variable": "tax_exempt_403b_distributions",
+   "reference_total": null,
+   "candidate_total": null,
+   "flat_incumbent_total": 0.0
+  },
+  {
+   "variable": "tax_exempt_interest_income",
+   "reference_total": 55604244566.03702,
+   "candidate_total": 54140694697.14924,
+   "flat_incumbent_total": 82608907114.66438
+  },
+  {
+   "variable": "tax_exempt_ira_distributions",
+   "reference_total": 27359299625.88037,
+   "candidate_total": null,
+   "flat_incumbent_total": 5052226711.131186
+  },
+  {
+   "variable": "tax_exempt_private_pension_income",
+   "reference_total": 837715181782.663,
+   "candidate_total": 223258135757.1466,
+   "flat_incumbent_total": 682000118519.2983
+  },
+  {
+   "variable": "tax_exempt_sep_distributions",
+   "reference_total": null,
+   "candidate_total": null,
+   "flat_incumbent_total": 0.0
+  },
+  {
+   "variable": "taxable_401k_distributions",
+   "reference_total": 124321001296.4006,
+   "candidate_total": null,
+   "flat_incumbent_total": 37435065985.37077
+  },
+  {
+   "variable": "taxable_403b_distributions",
+   "reference_total": 16016359747.871227,
+   "candidate_total": null,
+   "flat_incumbent_total": 7783123075.874193
+  },
+  {
+   "variable": "taxable_interest_income",
+   "reference_total": 522564841122.10944,
+   "candidate_total": 320158518537.96906,
+   "flat_incumbent_total": 299768329252.56323
+  },
+  {
+   "variable": "taxable_ira_distributions",
+   "reference_total": 432808276898.20703,
+   "candidate_total": 430111162044.06635,
+   "flat_incumbent_total": 441163665282.5067
+  },
+  {
+   "variable": "taxable_private_pension_income",
+   "reference_total": 893264967943.8494,
+   "candidate_total": 889089725548.8137,
+   "flat_incumbent_total": 920066789720.9116
+  },
+  {
+   "variable": "taxable_sep_distributions",
+   "reference_total": 6338009316.142894,
+   "candidate_total": null,
+   "flat_incumbent_total": 1216761045.519219
+  },
+  {
+   "variable": "tip_income",
+   "reference_total": 59075795466.865524,
+   "candidate_total": null,
+   "flat_incumbent_total": 51631680976.39113
+  },
+  {
+   "variable": "traditional_401k_contributions_desired",
+   "reference_total": 304138311727.01965,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "traditional_ira_contributions_desired",
+   "reference_total": 16119387632.428867,
+   "candidate_total": null,
+   "flat_incumbent_total": null
+  },
+  {
+   "variable": "treasury_tipped_occupation_code",
+   "reference_total": 10489498138.873323,
+   "candidate_total": null,
+   "flat_incumbent_total": 11894618108.027016
+  },
+  {
+   "variable": "unadjusted_basis_qualified_property",
+   "reference_total": 1891025462092.3604,
+   "candidate_total": null,
+   "flat_incumbent_total": 2052218821385.8286
+  },
+  {
+   "variable": "unemployment_compensation",
+   "reference_total": 28256690345.070824,
+   "candidate_total": 29663172674.263992,
+   "flat_incumbent_total": 35183982356.41081
+  },
+  {
+   "variable": "unrecaptured_section_1250_gain",
+   "reference_total": 60851481366.59842,
+   "candidate_total": null,
+   "flat_incumbent_total": 45729150178.30081
+  },
+  {
+   "variable": "unreimbursed_business_employee_expenses",
+   "reference_total": 218286991630.73547,
+   "candidate_total": null,
+   "flat_incumbent_total": 123316733028.99635
+  },
+  {
+   "variable": "unreported_payroll_tax",
+   "reference_total": null,
+   "candidate_total": null,
+   "flat_incumbent_total": 0.0
+  },
+  {
+   "variable": "veterans_benefits",
+   "reference_total": 177432552517.80145,
+   "candidate_total": null,
+   "flat_incumbent_total": 130851095312.99939
+  },
+  {
+   "variable": "w2_wages_from_qualified_business",
+   "reference_total": 140376261381.89117,
+   "candidate_total": null,
+   "flat_incumbent_total": 847231991369.5789
+  },
+  {
+   "variable": "weekly_hours_worked_before_lsr",
+   "reference_total": 13514448040.778927,
+   "candidate_total": null,
+   "flat_incumbent_total": 6502387731.414833
+  },
+  {
+   "variable": "weeks_unemployed",
+   "reference_total": 210472444.55348358,
+   "candidate_total": null,
+   "flat_incumbent_total": 187163779.99214685
+  },
+  {
+   "variable": "workers_compensation",
+   "reference_total": 7819075064.4507675,
+   "candidate_total": null,
+   "flat_incumbent_total": 9893776966.16132
+  },
+  {
+   "variable": "would_claim_wic",
+   "reference_total": 337861201.0194732,
+   "candidate_total": null,
+   "flat_incumbent_total": 334847817.1488899
+  },
+  {
+   "variable": "would_file_taxes_voluntarily",
+   "reference_total": 6769568.638035465,
+   "candidate_total": null,
+   "flat_incumbent_total": 3286072.1190664396
+  }
+ ]
+}

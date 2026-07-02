@@ -23,6 +23,7 @@ historical candidate scorecards, and audit-only scripts belong here.
 | Area | Path | Purpose |
 | --- | --- | --- |
 | US incumbent comparison | `benchmarks/us/incumbent-comparison/` | Compare candidate Populace-US artifacts with the certified production incumbent on the frozen target surface. |
+| US input-mass parity | `benchmarks/us/input-mass-parity/` | Verify a candidate release keeps the persisted engine-input mass of the prior certified release (populace #278). |
 | Historical archives | `archive/` | Small scorecards and run notes that document past candidate decisions. Large HDF5 artifacts stay in object storage or the local artifact cache. |
 
 ## Promotion Rule

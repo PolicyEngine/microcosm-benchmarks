@@ -1,0 +1,20 @@
+[project]
+name = "populace-benchmarks"
+version = "0.1.0"
+description = "Benchmark harnesses and archived incumbent comparisons for Populace"
+requires-python = ">=3.13"
+dependencies = [
+    "populace-build[us]",
+    "h5py>=3",
+    "tables>=3",
+    "pandas>=2",
+    "numpy>=1.26",
+]
+
+[tool.uv.sources]
+# The populace shards are not published to PyPI; resolve every workspace
+# member from the live repo so populace-build's internal pins are satisfied.
+populace-build = { git = "https://github.com/PolicyEngine/populace", subdirectory = "packages/populace-build" }
+populace-frame = { git = "https://github.com/PolicyEngine/populace", subdirectory = "packages/populace-frame" }
+populace-fit = { git = "https://github.com/PolicyEngine/populace", subdirectory = "packages/populace-fit" }
+populace-calibrate = { git = "https://github.com/PolicyEngine/populace", subdirectory = "packages/populace-calibrate" }
