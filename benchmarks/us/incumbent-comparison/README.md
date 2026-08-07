@@ -1,12 +1,12 @@
 # US Incumbent Comparison
 
-This directory owns the US incumbent replacement benchmark for Populace-US.
-It is outside the live Populace repo so release code does not carry historical
+This directory owns the US incumbent replacement benchmark for Microcosm-US.
+It is outside the live Microcosm repo so release code does not carry historical
 comparison harnesses or local-baseline assumptions.
 
 ## Required Inputs
 
-- Candidate Populace-US HDF5 artifact.
+- Candidate Microcosm-US HDF5 artifact.
 - Certified pinned production incumbent HDF5 artifact from the manifest.
 - Frozen benchmark target manifest used for the replacement decision.
 - Explicit output directory for scorecards and diagnostics.
