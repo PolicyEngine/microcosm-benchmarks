@@ -1,6 +1,6 @@
 {
   "name": "pinned-production-ecps-2024",
-  "description": "Certified production incumbent baseline for Populace-US replacement benchmarks.",
+  "description": "Certified production incumbent baseline for Microcosm-US replacement benchmarks.",
   "created": "2026-06-14",
   "dataset_repository": "policyengine/policyengine-us-data",
   "blob_sha256": "7af7026224f84cb6a91743fd8fa7ac506bad8c78e011fa58b6901894db4b4290",
