@@ -31,3 +31,7 @@ A candidate can only replace an incumbent when the benchmark output is
 reproducible from explicit inputs, the export/support/lineage gates are green,
 and the candidate beats the pinned incumbent on every promotion metric defined
 by the benchmark manifest.
+
+## License
+
+Code in this repository is released under the [MIT License](LICENSE). Original text and figures are released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) with attribution to PolicyEngine. Third-party data and materials keep their own terms.
